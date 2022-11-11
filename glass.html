@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title> glassmorphism</title>
+        <meta charset="utf-8">
+        <style>
+          body{
+            background-color:#080710;
+          }  
+          .container{
+            width:430px;
+            height:520px;
+            position:absolute;
+            transform:translate(-50%, -50%);
+            left:50%;
+            top:50%;
+            
+         }
+        
+         .container .shape{
+            height:250px;
+            width:250px;
+            position:absolute;
+            border-radius: 50%;
+         }
+         .shape:first-child{
+            background:linear-gradient(#9b22ea,#f308d7);
+            left:-100px;
+            top:-100px;
+         }
+         .shape:last-child{
+            background:linear-gradient(#2d0f5c,#a42661);
+            right:-100px;
+            bottom:-100px;
+         }
+         .card{
+            width:430px;
+            height:540px;
+            position:absolute;
+            transform:translate(-50%, -50%);
+            left:50%;
+            top:50%;
+            background-color: rgba(255,255,255,0.07);
+            backdrop-filter:blur(10px);
+            border:2px solid transparent;
+            border-image:linear-gradient(45deg, #ff0,#f00,#00f);
+            border-image-slice:1;
+            box-shadow:0 0 40px rgba(8,7,16,0.6);
+            border-radius: 10px;
+            border-top:transparent;
+            border-left:transparent;
+         }
+         .card .content{
+            text-align:center;
+         }
+         .card .content img{
+            width:200px;
+            height:auto;
+            margin:20px;
+            border-radius:50%;
+            box-shadow:0 0 40px rgba(8,7,16,0.6);
+            border:2px solid white;
+         }
+         .card .content h1{
+            font-size: 40px;
+            font-style:regular;
+            color:rgb(239, 233, 239);
+            font-weight:bold;
+        }
+        .card .content h4{
+            font-size:20px;
+            font-style:italic;
+            color:gold;
+            font-weight:20px;
+        }
+        .card .content p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:aqua;
+            line-height: 20px;
+        }
+        .card .content a{
+            text-decoration: none;
+            width: 1000px;
+            height:100px;
+            margin:10px;
+            padding-left:30px;
+            padding-right: 30px;
+            background: linear-gradient(45deg,#ff0,#0ff);
+            border-radius: 20px;
+            font-size:25px;
+            color:blue;
+            font-weight:20px;
+            font-style:regular;
+            padding-bottom: 10px;
+        
+        }
+        .card .content a:hover{
+            background: linear-gradient(45deg,#0ff,#ff0); 
+            border:2px solid burlywood;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        
+        <div class="card">
+            <div class="content">
+            <img src="https://papik.pro/en/uploads/posts/2022-06/1655715037_2-papik-pro-p-cool-profile-picture-avatars-for-girls-2.jpg">
+            <h1>Mounika Nayikoti</h1>
+            <h4>Front-End Developer</h4>
+            <p>I'm Mounika Nayikoti,a Front-End Designer,Enjoy in Creating good-looking gorgeous Web Designs.</p>
+            <a href="#">profile</a>
+        </div>
+        </div> 
+    </body>
+</html>
